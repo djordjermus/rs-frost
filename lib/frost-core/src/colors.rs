@@ -73,7 +73,7 @@ impl fmt::Display for RGBA8
 {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result
     {
-        return write!(f, "(r: {}, g: {}, b: {}, a: {})", self.r, self.g, self.b, self.a);
+        return write!(f, "[r: {}, g: {}, b: {}, a: {}]", self.r, self.g, self.b, self.a);
     }
 }
 
@@ -143,7 +143,7 @@ impl fmt::Display for RGBA32
 {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result
     {
-        return write!(f, "(r: {}, g: {}, b: {}, a: {})", self.r, self.g, self.b, self.a);
+        return write!(f, "[r: {}, g: {}, b: {}, a: {}]", self.r, self.g, self.b, self.a);
     }
 }
 
