@@ -65,7 +65,7 @@ impl TryFrom<&Color> for RGBA8 {
             Color::HSVA  { h, s, v, a }    => return Ok(Self::from_hsva(*h, *s, *v, *a)),
             Color::HSLA  { h, s, l, a }    => return Ok(Self::from_hsva(*h, *s, *l, *a)),
             Color::CMYKA { c, m, y, k, a } => return Ok(Self::from_cmyka(*c, *m, *y, *k, *a)),
-            _ => Err("RGBA8.TryFrom<Color> Error - Bad color value!")
+            // _ => Err("RGBA8.TryFrom<Color> Error - Bad color value!")
         }
     }
 }
@@ -73,7 +73,7 @@ impl fmt::Display for RGBA8
 {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result
     {
-        return write!(f, "(r: {}, g: {}, b: {}, a: {})", self.r, self.g, self.b, self.a);
+        return write!(f, "[r: {}, g: {}, b: {}, a: {}]", self.r, self.g, self.b, self.a);
     }
 }
 
@@ -135,7 +135,7 @@ impl TryFrom<&Color> for RGBA32 {
             Color::HSVA  { h, s, v, a }    => return Ok(Self::from_hsva(*h, *s, *v, *a)),
             Color::HSLA  { h, s, l, a }    => return Ok(Self::from_hsva(*h, *s, *l, *a)),
             Color::CMYKA { c, m, y, k, a } => return Ok(Self::from_cmyka(*c, *m, *y, *k, *a)),
-            _ => Err("RGBA8.TryFrom<Color> Error - Bad color value!")
+            // _ => Err("RGBA8.TryFrom<Color> Error - Bad color value!")
         }
     }
 }
@@ -143,7 +143,7 @@ impl fmt::Display for RGBA32
 {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result
     {
-        return write!(f, "(r: {}, g: {}, b: {}, a: {})", self.r, self.g, self.b, self.a);
+        return write!(f, "[r: {}, g: {}, b: {}, a: {}]", self.r, self.g, self.b, self.a);
     }
 }
 
