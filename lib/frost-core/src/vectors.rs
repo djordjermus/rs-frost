@@ -1,6 +1,3 @@
-use core::fmt;
-use std::ops;
-
 #[derive(Clone)]
 pub struct Vector2<T> { pub x: T, pub y: T }
 impl<T> Vector2<T>
