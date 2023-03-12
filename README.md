@@ -1,7 +1,7 @@
 # RS-FROST
 <HR>
 **RS-FROST** is a rust UI and multimedia library.<BR>
-It is a rust version of (Frost)[https://github.com/djordjermus/frost-old] and **(Cauldron)[https://github.com/djordjermus/cauldron]**<BR>
+It is a rust version of [Frost](https://github.com/djordjermus/frost-old) and **[Cauldron](https://github.com/djordjermus/cauldron)**<BR>
 
 
 # TODO
